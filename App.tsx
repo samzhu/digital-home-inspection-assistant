@@ -83,7 +83,7 @@ const App: React.FC = () => {
       
       stats[cat.id] = {
         total: catItems.length,
-        done: catItems.filter(i => i.status !== InspectionStatus.PENDING).length
+        done: catItems.filter(i => i.status === InspectionStatus.PASS).length
       };
     });
     return stats;
@@ -410,7 +410,7 @@ const App: React.FC = () => {
           <div className="p-3 flex justify-between items-center border-b border-gray-50">
             <h1 className="text-base font-black text-gray-800 flex items-center gap-2">
               <div className="bg-safety-orange p-1 rounded-md text-white"><ClipboardList size={16} /></div>
-              數位驗屋
+              驗屋助手
             </h1>
             <div className="flex bg-gray-100 rounded-full p-0.5">
               <button onClick={() => setViewMode(ViewMode.ALL)} className={`px-3 py-0.5 rounded-full text-[10px] font-black uppercase transition-all ${viewMode === ViewMode.ALL ? 'bg-white shadow-sm text-safety-orange' : 'text-gray-400'}`}>全部</button>
