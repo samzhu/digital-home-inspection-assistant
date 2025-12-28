@@ -402,7 +402,7 @@ const App: React.FC = () => {
     <div className="w-full h-[100dvh] bg-gray-50 text-gray-900 font-sans flex flex-col md:flex-row overflow-hidden">
       {/* --- Left Panel (Navigation & List) --- */}
       {/* On Mobile: Hidden if editing. On Desktop: Always visible, fixed width */}
-      <div className={`flex flex-col h-full w-full md:w-[400px] lg:w-[450px] shrink-0 border-r border-gray-200 bg-gray-50 relative z-0 transition-all ${editingItem ? 'hidden md:flex' : 'flex'}`}>
+      <div className={`flex flex-col h-full w-full md:w-[40%] shrink-0 border-r border-gray-200 bg-gray-50 relative z-0 transition-all ${editingItem ? 'hidden md:flex' : 'flex'}`}>
         
         {/* Sticky Header inside Left Panel */}
         <header className="sticky top-0 z-30 bg-white border-b shadow-sm shrink-0">
