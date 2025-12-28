@@ -1,0 +1,8 @@
+{
+  "name": "Digital Home Inspection Assistant",
+  "description": "A professional mobile-first PWA for home inspections with offline storage, image annotation, and progress tracking.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
